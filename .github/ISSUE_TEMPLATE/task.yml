@@ -1,0 +1,34 @@
+name: Task
+description: Implementation task linked to a story
+title: "[Task] "
+labels:
+  - task
+  - virtual-team
+assignees: []
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What
+      placeholder: Bullet list of changes
+    validations:
+      required: true
+
+  - type: textarea
+    id: how
+    attributes:
+      label: How
+      placeholder: Approach, modules/files, pseudocode
+    validations:
+      required: true
+
+  - type: textarea
+    id: dod
+    attributes:
+      label: Definition of Done
+      placeholder: |
+        - Tests updated/passing
+        - Docs updated
+        - Observability hooks present (logs/metrics if applicable)
+    validations:
+      required: true
