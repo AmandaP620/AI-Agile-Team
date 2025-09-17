@@ -1,1 +1,28 @@
+---
+name: User Story
+about: Describe a feature from the user's perspective
+title: "[Story] "
+labels: ["story", "virtual-team"]
+assignees: ""
+---
+
+## As a
+(user/persona)
+
+## I want
+(capability)
+
+## So that
+(benefit)
+
+## Acceptance Criteria (Gherkin)
+- GIVEN ...
+  WHEN ...
+  THEN ...
+
+## Dependencies
+- 
+
+## Notes
+- 
 
