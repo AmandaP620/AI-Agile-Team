@@ -1,28 +1,54 @@
----
 name: User Story
-about: Describe a feature from the user's perspective
+description: Describe a feature from the user's perspective
 title: "[Story] "
-labels: ["story", "virtual-team"]
-assignees: ""
----
+labels:
+  - story
+  - virtual-team
+assignees: []  # or: ["your-username"]
+body:
+  - type: input
+    id: persona
+    attributes:
+      label: As a
+      placeholder: user/persona
+    validations:
+      required: true
 
-## As a
-(user/persona)
+  - type: input
+    id: capability
+    attributes:
+      label: I want
+      placeholder: capability
+    validations:
+      required: true
 
-## I want
-(capability)
+  - type: input
+    id: benefit
+    attributes:
+      label: So that
+      placeholder: benefit
+    validations:
+      required: true
 
-## So that
-(benefit)
+  - type: textarea
+    id: ac
+    attributes:
+      label: Acceptance Criteria (Gherkin)
+      description: Use GIVEN / WHEN / THEN lines
+      placeholder: |
+        - GIVEN ...
+          WHEN ...
+          THEN ...
+    validations:
+      required: true
 
-## Acceptance Criteria (Gherkin)
-- GIVEN ...
-  WHEN ...
-  THEN ...
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      placeholder: "- …"
 
-## Dependencies
-- 
-
-## Notes
-- 
-
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
