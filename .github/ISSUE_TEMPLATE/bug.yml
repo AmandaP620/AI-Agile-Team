@@ -1,0 +1,44 @@
+name: Bug
+description: Report something that’s broken
+title: "[Bug] "
+labels:
+  - bug
+  - virtual-team
+assignees: []
+body:
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: input
+    id: env
+    attributes:
+      label: Environment
+      placeholder: "Browser/OS, version/commit"
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      placeholder: Who/what is affected, severity
